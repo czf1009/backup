@@ -342,3 +342,8 @@ nnoremap ev :vsplit $MYVIMRC
 nnoremap sv :source $MYVIMRCmap tl :TlistToggle
 nnoremap ev :vsplit $MYVIMRC
 nnoremap sv :source $MYVIMRC
+
+" 解决无法在终端右键复制粘贴的问题
+if has('mouse')
+    set mouse-=a
+endif
